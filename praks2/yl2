@@ -1,7 +1,8 @@
 #!/bin/bash
-#kasutaja tervitus
-echo -n "Tere,"
-echo -n `whoami | cut -c1 | tr [a-z] [A-Z]`
-echo -n `whoami | cut -c2-`
-echo "!"
-
+#ülesanne 3 kalender
+date +"Today is %B %d" 
+date +"Time is %H:%M"
+echo ""
+date +"Calendar of %B %Y"
+cal | tail -n 7
+ 
